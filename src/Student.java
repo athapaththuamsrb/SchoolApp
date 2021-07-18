@@ -1,7 +1,17 @@
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
 public class Student {
+    @Id
+    @Column(name="studentId")
     private String id;
+    @Column(name="studentName")
     private String name;
+    @Column(name="studentAddress")
     private String address;
+    @Column(name="studentContact")
     private String contact;
 
     public Student() {
